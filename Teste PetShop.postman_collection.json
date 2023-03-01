@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "059670d5-5f6d-4fd9-80cf-116da38f1216",
+		"name": "Teste PetShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24996138"
+	},
+	"item": [
+		{
+			"name": "Add Pet e procedimento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomePet\": \"Neguin\",\r\n    \"nomeTutor\": \"Rogério\",\r\n    \"procedimento\":\"Banho e tosa\",\r\n    \"agendamento\": \"25/02/2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByID Pet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pets/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pets",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pets/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomePet\": \"Harry\",\r\n    \"nomeTutor\": \"Potter\",\r\n    \"procedimento\":\"Banho e tosa\",\r\n    \"agendamento\": \"15/02/2023\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pets/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pets",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
